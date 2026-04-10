@@ -1,6 +1,8 @@
 USE `comuni_italiani`;
 
-CREATE TABLE IF NOT EXISTS `comuni` (
+DROP TABLE IF EXISTS `comuni`;
+
+CREATE TABLE `comuni` (
   `id`                INT AUTO_INCREMENT PRIMARY KEY,
   `nome`              VARCHAR(255) NOT NULL,
   `nome_altra_lingua` VARCHAR(255) DEFAULT NULL,
