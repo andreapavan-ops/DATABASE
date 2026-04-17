@@ -5,6 +5,6 @@ SELECT DISTINCT
   c.denominazione_uts,
   c.sigla_automobilistica,
   r.id
-FROM `comuni_raw` c
+FROM `comuni` c
 JOIN `regioni` r
   ON r.codice_istat = LPAD(c.codice_regione, 2, '0') COLLATE utf8mb4_unicode_ci;
